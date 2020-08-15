@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyA5qoDQbp0eXSnpXrRH0R8LDCa4JktToro",
+      authDomain: "quiz-app-ed0b6.firebaseapp.com",
+      databaseURL: "https://quiz-app-ed0b6.firebaseio.com",
+      projectId: "quiz-app-ed0b6",
+      storageBucket: "quiz-app-ed0b6.appspot.com",
+      messagingSenderId: "235328632321",
+      appId: "1:235328632321:web:ee5a1219a9413b7552f200"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+</head>
+<body>
+
+<!-- // form for data input
+<input type="text" id="question" placeholder="Question"><br>
+<input type="text" id="op1" placeholder="a"><br>
+<input type="text" id="op2" placeholder="b"><br>
+<input type="text" id="op3" placeholder="c"><br>
+<input type="text" id="op4" placeholder="d"><br>
+<input type="text" id="correct" placeholder="Correct"><br>
+<button onclick="sendFirebaseData()" >Send Data</button>
+ 
+
+
+
+<input type="text" id="question-area"><br>
+<p type="text" id="option1"></p><br>
+<p type="text" id="option2"></p><br>
+<p type="text" id="option3"></p><br>
+<p type="text" id="option4"></p> -->
+ 
+
+
+<div class="conatiner">
+
+
+<div class="front-page">
+
+<h1>Happy Independence Day</h1>
+
+<div class="wel">
+    <div class="h21">Welcome</div>
+    <div class="h22">to</div>
+    <div class="h23">Azadi Quiz</div>
+    <div class="img"><img src="cflag.png"></div>
+    <button class="startbtn" onclick="play()">Play Now</button>
+</div>
+
+</div>
+
+
+<div class="gameScreen">
+
+
+
+<!-- Second Page -->
+
+<div class="second-page hide">
+
+
+    <div class="score">Score:</div>
+
+    <div class="check">Check</div>
+
+
+ <!-- Question Section -->
+
+    <div class="question">  
+    <p id="q-area"></p>
+    </div>
+
+    <div class="op1" >
+    <p id="op1-area" ></p>
+    </div>
+
+    <div class="op2">
+    <p id="op2-area"></p>
+    </div>
+
+    <div class="op3"> 
+    <p id="op3-area"></p>
+    </div>
+
+    <div class="op4">
+    <p id="op4-area"></p>
+    </div>
+
+
+
+
+<div class="paging">
+    <ul>
+        <li id="li1">1</li>
+        <li id="li2">2</li>
+        <li id="li3">3</li>
+        <li id="li4">4</li>
+        <li id="li5">5</li>
+        <li id="li6">6</li>
+        <li id="li7">7</li>
+        <li id="li8">8</li>
+        <li id="li9">9</li>
+        <li id="li10">10</li>
+    </ul>
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+<script src="app.js"></script>
+</html>
